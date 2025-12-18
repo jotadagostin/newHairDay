@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* COLORS: */
+  /* Product- color: */
+  --color-yellow-light: #dbc170;
+  --color-yellow: #b8952e;
+  --color-yellow-dark: #846f2e;
+
+  /* Base-color: */
+  --color-gray-100: #f5f4f5;
+  --color-gray-200: #b2afb6;
+  --color-gray-300: #98959d;
+  -color-gray-400: #7a767f;
+  --color-gray-500: #3e3c41;
+  --color-gray-600: #2e2c30;
+  --color-gray-700: #232225;
+  --color-gray-800: #19181b;
+  --color-gray-900: #050505;
+
+  /* Fonte principal */
+  --font-family: "Catamaran", sans-serif;
+
+  /* Title - Large */
+  --font-title-lg-size: 32px;
+  --font-title-lg-line: 24px; /* line-height */
+  --font-title-lg-weight: 700; /* Bold */
+
+  /* Title - Medium */
+  --font-title-md-size: 16px;
+  --font-title-md-line: 24px;
+  --font-title-md-weight: 700;
+
+  /* Title - Small */
+  --font-title-sm-size: 14px;
+  --font-title-sm-line: 20px;
+  --font-title-sm-weight: 700;
+
+  /* Text - Medium */
+  --font-text-md-size: 16px;
+  --font-text-md-line: 24px;
+  --font-text-md-weight: 400; /* Regular */
+
+  /* Text - Small */
+  --font-text-sm-size: 14px;
+  --font-text-sm-line: 20px;
+  --font-text-sm-weight: 400;
+}
