@@ -1,10 +1,10 @@
-import Button from "./components/Button";
+import TextInput from "./components/TextInput";
 import "./index.css";
 
 function App() {
   return (
     <div>
-      <Button />
+      <TextInput />
     </div>
   );
 }
