@@ -1,10 +1,10 @@
-import TextInput from "./components/TextInput";
+import TrashButton from "./components/TrashButton";
 import "./index.css";
 
 function App() {
   return (
     <div>
-      <TextInput />
+      <TrashButton />
     </div>
   );
 }
