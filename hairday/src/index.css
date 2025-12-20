@@ -53,6 +53,18 @@
   --font-text-sm-weight: 400;
 }
 
-body {
+/* body {
   background: #000;
+} */
+
+@tailwind utilities;
+
+/* Remove ícone do input time */
+input[type="time"]::-webkit-calendar-picker-indicator {
+  @apply hidden;
+}
+
+/* Firefox */
+input[type="time"] {
+  appearance: textfield;
 }
