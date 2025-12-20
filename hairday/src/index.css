@@ -53,9 +53,9 @@
   --font-text-sm-weight: 400;
 }
 
-/* body {
+body {
   background: #000;
-} */
+}
 
 @tailwind utilities;
 
@@ -67,4 +67,12 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 /* Firefox */
 input[type="time"] {
   appearance: textfield;
+}
+
+input[type="time"]::-webkit-input-placeholder {
+  cursor: none; /* Tenta remover a seleção */
+}
+
+input[type="time"]::selection {
+  background-color: transparent; /* Para o texto não ser destacado */
 }
