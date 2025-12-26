@@ -76,3 +76,8 @@ input[type="time"]::-webkit-input-placeholder {
 input[type="time"]::selection {
   background-color: transparent; /* Para o texto não ser destacado */
 }
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
