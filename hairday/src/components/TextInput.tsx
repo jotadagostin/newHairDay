@@ -1,6 +1,6 @@
 export default function TextInput() {
   return (
-    <div className="relative flex flex-col">
+    <div className="relative flex flex-col gap-2 w-full">
       {/* Ícone */}
       <svg
         className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5"
@@ -16,7 +16,7 @@ export default function TextInput() {
       <input
         type="text"
         placeholder="Client`s name"
-        className="flex items-center justify-center w-2xs  h-12 bg-gray-900 border border-gray-500 placeholder-gray-300 rounded-lg p-1   pl-10
+        className="flex items-center justify-center w-full  h-12 bg-gray-900 border border-gray-500 placeholder-gray-300 rounded-lg p-1   pl-10
           pr-3
           py-2
           focus:outline-none

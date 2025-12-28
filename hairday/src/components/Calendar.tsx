@@ -10,10 +10,10 @@ export function Calendar() {
   };
 
   return (
-    <div className="flex flex-col gap-2">
-      <label className="text-md text-gray-200">Date</label>
+    <div className="flex flex-col gap-2 w-full">
+      <label className="text-md text-gray-200 font-bold">Date</label>
 
-      <div className="relative">
+      <div className="relative ">
         {/* Ícone posicionado dentro do input */}
         <CalendarIcon
           onClick={handleIconClick}
