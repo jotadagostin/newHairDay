@@ -4,6 +4,12 @@ import TextInput from "../components/TextInput";
 import { TimeSelect } from "../components/TimeSelect";
 
 export default function Form() {
+  const morningHours = ["08:00", "09:00", "10:00", "11:00"];
+
+  const afternoonHours = ["12:00", "13:00", "14:00", "15:00", "16:00", "17:00"];
+
+  const eveningHours = ["19:00", "20:00", "21:00"];
+
   return (
     <div className="flex flex-col gap-6 p-5">
       <div className=" w-85">
@@ -23,30 +29,25 @@ export default function Form() {
         <div className="pt-2">
           <h2 className="text-sm text-gray-300">Morning</h2>
           <div className="flex gap-2 pt-2">
-            <TimeSelect />
-            <TimeSelect />
-            <TimeSelect />
-            <TimeSelect />
+            {morningHours.map((hour) => (
+              <TimeSelect key={hour} time={hour} />
+            ))}
           </div>
         </div>
         <div className="pt-2">
           <h2 className="text-sm text-gray-300">Afternoon</h2>
           <div className="flex gap-2 pt-2 flex-wrap">
-            <TimeSelect />
-            <TimeSelect />
-            <TimeSelect />
-            <TimeSelect />
-            <TimeSelect />
-            <TimeSelect />
+            {afternoonHours.map((hour) => (
+              <TimeSelect key={hour} time={hour} />
+            ))}
           </div>
         </div>
         <div className="pt-2">
           <h2 className="text-sm text-gray-300">Evening</h2>
           <div className="flex gap-2 pt-2">
-            <TimeSelect />
-            <TimeSelect />
-            <TimeSelect />
-            <TimeSelect />
+            {eveningHours.map((hour) => (
+              <TimeSelect key={hour} time={hour} />
+            ))}
           </div>
         </div>
       </div>
