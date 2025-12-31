@@ -31,6 +31,7 @@
 
 import { AgendaCalendar } from "../components/AgendaCalendar";
 import MorningIcon from "../assets/icons/morning.svg?react";
+import TrashButton from "../components/TrashButton";
 
 export default function Agenda() {
   return (
@@ -48,14 +49,70 @@ export default function Agenda() {
       </div>
 
       {/* Horário da manhã */}
-      <div className="w-full">
-        <div className="flex justify-between items-center border border-gray-600 rounded-md overflow-hidden">
-          <div className="flex items-center gap-3 p-2">
+      <div className="w-full border border-gray-600 rounded-md overflow-hidden">
+        {/* Header */}
+        <div className="flex justify-between items-center p-2 bg-gray-800">
+          <div className="flex items-center gap-3">
             <MorningIcon className="w-4 h-4 fill-(--color-yellow-dark)" />
             <p className="text-gray-300 text-sm">Morning</p>
           </div>
 
-          <p className="text-gray-300 text-sm px-2">09h-12h</p>
+          <p className="text-gray-300 text-sm">09h–12h</p>
+        </div>
+
+        {/* Linha */}
+        <div className="flex justify-between items-center p-4 border-t border-gray-600">
+          <span className="text-gray-200 text-md">11:00</span>
+          <p className="text-gray-200 text-md">User name</p>
+          <TrashButton />
+        </div>
+      </div>
+      {/* Horário da manhã */}
+      <div className="w-full border border-gray-600 rounded-md overflow-hidden">
+        {/* Header */}
+        <div className="flex justify-between items-center p-2 bg-gray-800">
+          <div className="flex items-center gap-3">
+            <MorningIcon className="w-4 h-4 fill-(--color-yellow-dark)" />
+            <p className="text-gray-300 text-sm">Afternoon</p>
+          </div>
+
+          <p className="text-gray-300 text-sm">13h–18h</p>
+        </div>
+
+        {/* Linha */}
+        <div className="flex justify-between items-center p-4 border-t border-gray-600">
+          <span className="text-gray-200 text-md">13:00</span>
+          <p className="text-gray-200 text-md">User name</p>
+          <TrashButton />
+        </div>
+        <div className="flex justify-between items-center p-4 border-t border-gray-600">
+          <span className="text-gray-200 text-md">14:00</span>
+          <p className="text-gray-200 text-md">User name</p>
+          <TrashButton />
+        </div>
+        <div className="flex justify-between items-center p-4 border-t border-gray-600">
+          <span className="text-gray-200 text-md">15:00</span>
+          <p className="text-gray-200 text-md">User name</p>
+          <TrashButton />
+        </div>
+      </div>
+      {/* Horário da manhã */}
+      <div className="w-full border border-gray-600 rounded-md overflow-hidden">
+        {/* Header */}
+        <div className="flex justify-between items-center p-2 bg-gray-800">
+          <div className="flex items-center gap-3">
+            <MorningIcon className="w-4 h-4 fill-(--color-yellow-dark)" />
+            <p className="text-gray-300 text-sm">Evening</p>
+          </div>
+
+          <p className="text-gray-300 text-sm">19h–21h</p>
+        </div>
+
+        {/* Linha */}
+        <div className="flex justify-between items-center p-4 border-t border-gray-600">
+          <span className="text-gray-200 text-md">21:00</span>
+          <p className="text-gray-200 text-md">User name</p>
+          <TrashButton />
         </div>
       </div>
     </div>
