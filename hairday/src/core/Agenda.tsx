@@ -35,7 +35,7 @@ import TrashButton from "../components/TrashButton";
 
 export default function Agenda() {
   return (
-    <div className="flex flex-col w-full gap-6 px-5 mt-18">
+    <div className="flex flex-col w-full gap-6 px-5 mt-6 lg:mt-18">
       {/* Título + Calendário */}
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 w-full">
         <div className="flex flex-col gap-1">

@@ -3,7 +3,7 @@ import Schedule from "./Schedule";
 
 export default function MainLayout() {
   return (
-    <div className="relative flex gap-2">
+    <div className="relative flex flex-col lg:flex-row min-h-screen gap-2">
       <Schedule />
       <Agenda />
     </div>

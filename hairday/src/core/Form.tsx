@@ -12,7 +12,7 @@ export default function Form() {
 
   return (
     <div className="flex flex-col gap-6 p-5">
-      <div className=" w-85">
+      <div className="max-w-md w-full">
         <h1 className="text-gray-100 bold text-xl font-bold pb-2">
           Schedule your appointment
         </h1>
@@ -28,7 +28,7 @@ export default function Form() {
         <h1 className="text-md text-gray-200 font-bold ">Hours</h1>
         <div className="pt-2">
           <h2 className="text-sm text-gray-300">Morning</h2>
-          <div className="flex gap-2 pt-2">
+          <div className="flex gap-2 pt-2 flex-wrap ">
             {morningHours.map((hour) => (
               <TimeSelect key={hour} time={hour} />
             ))}
@@ -51,7 +51,7 @@ export default function Form() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 flex-wrap">
         <h1 className="text-md text-gray-200 font-bold ">Hours</h1>
         <TextInput />
         <Button />
