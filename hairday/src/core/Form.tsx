@@ -50,7 +50,7 @@ export default function Form({
   }
 
   return (
-    <div className="flex flex-col gap-6 p-5">
+    <div className="flex flex-col gap-6 px-5 py-2">
       <div className="max-w-md w-full">
         <h1 className="text-gray-100 bold text-xl font-bold pb-2">
           Schedule your appointment

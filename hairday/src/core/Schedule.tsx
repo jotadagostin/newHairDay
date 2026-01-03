@@ -17,7 +17,7 @@ export default function Schedule({
 }: ScheduleProps) {
   return (
     <div
-      className="relative  w-full 
+      className="w-full 
       lg:w-105
       min-h-screen 
       bg-gray-700 
@@ -29,7 +29,7 @@ export default function Schedule({
       flex 
       flex-col 
       items-center
-      relative"
+      "
     >
       <div className="px-8 py-5  mt-10 w-full max-w-md bg-gray-700 rounded-md flex flex-col">
         <Header />
