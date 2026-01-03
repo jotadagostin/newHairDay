@@ -18,7 +18,7 @@ export function TimeSelect({
         disabled={disabled}
         aria-disabled={disabled}
         className={
-          "border text-gray-200 border-gray-500 rounded-lg px-5 py-1 focus:outline-none " +
+          "h-12 flex items-center justify-center border text-gray-200 border-gray-500 rounded-lg px-4 focus:outline-none text-sm " +
           (disabled
             ? " bg-gray-700 opacity-60 cursor-not-allowed"
             : selected
