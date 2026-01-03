@@ -1,7 +1,11 @@
-export default function TextInput() {
+type TextInputProps = {
+  value?: string;
+  onChange?: (v: string) => void;
+};
+
+export default function TextInput({ value, onChange }: TextInputProps) {
   return (
     <div className="relative flex flex-col gap-2 w-full">
-      {/* Ícone */}
       <svg
         className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5"
         xmlns="http://www.w3.org/2000/svg"
@@ -16,6 +20,8 @@ export default function TextInput() {
       <input
         type="text"
         placeholder="Client`s name"
+        value={value}
+        onChange={(e) => onChange?.(e.target.value)}
         className="flex items-center justify-center w-full  h-12 bg-gray-900 border border-gray-500 placeholder-gray-300 rounded-lg p-1   pl-10
           pr-3
           py-2

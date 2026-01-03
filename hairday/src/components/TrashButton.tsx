@@ -1,8 +1,12 @@
 import TrashIcon from "../assets/icons/trash.svg?react";
 
-export default function TrashButton() {
+type TrashButtonProps = {
+  onClick?: () => void;
+};
+
+export default function TrashButton({ onClick }: TrashButtonProps) {
   return (
-    <button className="cursor-pointer">
+    <button onClick={onClick} className="cursor-pointer">
       <TrashIcon className="w-4 h-4 fill-(--color-yellow) hover:fill-(--color-yellow-dark)" />
     </button>
   );
